@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-primary: #171717;
+    --txt-primary: white;
+    --txt-second: #3bd5ff;
+    --txt-third: #8f8484;
+    --txt-fourth: black;
+    --bg-button-primary: #3bd5ff;
+
+    --bg-card: #212121;
+
+    --transition-time: 0.5s;
+    --transition-time-after: 0.3s;
+
+    /*prueba de colores */
+    --txt-p: skyblue;
+    --txt-a-500: #00b4ff;
+    --txt-a-400: #26d8ff;
+}
+body{
+    font-family: "Lato", sans-serif;
+    background-color: var(--bg-primary);
+    /* background-image: linear-gradient(96deg,#669aff 4.28%,#3bd5ff 51.18%,#3affff 100%); */
+}
+ul,a{
+    text-decoration: none;
+    list-style: none;
+}
+.main-header{
+    padding: 1.1rem 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--bg-primary);
+    /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); */
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    height: inherit;
+    min-height: inherit;
+}
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-header .nav-menu{
+    display: flex;
+    flex-direction: row;
+}
+.container-header .logo{
+    color: var(--txt-primary);
+}
+#check{
+    display: none;
+}
+.container-header .nav-menu .nav-check-btn{
+    cursor: pointer;
+    float: right;
+    display: none;
+    z-index: 3000;
+    position: relative;
+}
+.container-header .nav-menu .nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.container-header .nav-menu .nav-list .nav-link{
+    color: var(--txt-primary);
+    position: relative;
+    padding: 0 8px;
+}
+.container-header .nav-menu .nav-list .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: var(--txt-second);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: var(--transition-time-after);
+}
+.container-header .nav-menu .nav-list .nav-link:hover:after{
+    width: 100%;
+}
+.main-hero{
+    min-height: calc(100vh - 64px);
+}
+.main-hero .container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
+}
+.main-hero .hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-hero .hero-info .hero-title{
+    color: var(--txt-primary);
+    font-size: 3.5rem;
+}
+.main-hero .hero-info .hero-subtitle{
+    color: var(--txt-second);
+    font-size: 2rem;
+}
+.main-hero .hero-info .hero-description{
+    max-width: 650px;
+    word-wrap: break-word;
+    color: var(--txt-third);
+}
+.main-hero .hero-info .hero-button{
+    margin: 2rem 0;
+}
+.main-hero .hero-info .hero-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.main-hero .hero-info .hero-list .hero-link img{
+    width: 1.6rem;
+}
+.button-primary{
+    background-color: var(--bg-button-primary);
+    color: var(--txt-fourth);
+    padding: 1rem;
+    border-radius: 8px;
+}
+@media (max-width: 768px){
+    .container-header .nav-menu .nav-check-btn{
+        display: block;
+    }
+    .container-header .logo{
+        z-index: 3000;
+    }
+    .container-header .nav-menu .nav-list{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-card);
+        text-align: center;
+        top: 0;
+        left: 0;
+        clip-path: circle(0% at 100% 0%);
+        transition: clip-path var(--transition-time) ease;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 5rem;
+    }
+    #check:checked ~ .nav-list{
+        clip-path: circle(150% at 100% 0%);
+    }
+    .container-header .nav-menu .nav-list .nav-item{
+        line-height: 30px;
+    }
+    .container-header .nav-menu .nav-list .nav-item .nav-link {
+        color: var(--txt-primary); 
+        transition: color var(--transition-time);
+    }
+    #check:checked ~ .nav-check-btn{
+        display: block; 
+    }
+}
