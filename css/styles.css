@@ -5,21 +5,21 @@
 }
 :root{
     --bg-primary: #171717;
+    --bg-second: #212121;
+    --bg-button-primary: #3bd5ff;
+
     --txt-primary: white;
     --txt-second: #3bd5ff;
     --txt-third: #8f8484;
     --txt-fourth: #062E46;
-    --bg-button-primary: #3bd5ff;
-
-    --bg-card: #212121;
 
     --transition-time: 0.5s;
     --transition-time-after: 0.3s;
 
     /*prueba de colores */
-    --txt-p: skyblue;
+    /* --txt-p: skyblue;
     --txt-a-500: #00b4ff;
-    --txt-a-400: #26d8ff;
+    --txt-a-400: #26d8ff; */
 }
 body{
     font-family: "Lato", sans-serif;
@@ -30,6 +30,20 @@ ul,a{
     text-decoration: none;
     list-style: none;
 }
+.button-primary{
+    background-color: var(--bg-button-primary);
+    color: var(--txt-fourth);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.button-second{
+    background-color: transparent;
+    border: 1px solid var(--bg-button-primary);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
 .main-header{
     padding: 1.1rem 0;
     position: sticky;
@@ -38,7 +52,6 @@ ul,a{
     width: 100%;
     z-index: 1000;
     background-color: var(--bg-primary);
-    /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5); */
 }
 .container{
     max-width: 1320px;
@@ -162,12 +175,84 @@ ul,a{
     width: 1.6rem;
     cursor: pointer;
 }
-.button-primary{
-    background-color: var(--bg-button-primary);
+.main-sobremi{
+    min-height: calc(100vh - 64px);
+    background-color: var(--bg-second);
+}
+.main-sobremi .title{
+    color: var(--txt-primary);
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.main-sobremi .title::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--txt-second);
+    width: 70px;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-sobremi .container-sobremi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 219px;
+}
+.main-sobremi .container-sobremi .sobremi-imagen img{
+    width: 398px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
+}
+.main-sobremi .container-sobremi .sobremi-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 616px;
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-subtitle{
+    color: var(--txt-second);
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-description{
+    color: var(--txt-third);
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-list .button-primary a{
     color: var(--txt-fourth);
-    padding: 1rem;
-    border-radius: 8px;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-list .button-primary img{
+    width: 1.5rem;
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-list .button-second a{
+    color: var(--txt-second);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+.main-sobremi .container-sobremi .sobremi-info .sobremi-list .button-second img{
+    width: 1.5rem;
 }
 @media (max-width: 768px){
     .container{
