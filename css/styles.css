@@ -44,6 +44,24 @@ ul,a{
     font-size: 1rem;
     border-radius: 0.5rem;
 }
+.title{
+    color: var(--txt-primary);
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.title::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--txt-second);
+    width: 70px;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .main-header{
     padding: 1.1rem 0;
     position: sticky;
@@ -179,24 +197,6 @@ ul,a{
     min-height: calc(100vh - 64px);
     background-color: var(--bg-second);
 }
-.main-sobremi .title{
-    color: var(--txt-primary);
-    text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 3rem;
-    position: relative;
-}
-.main-sobremi .title::after{
-    content: "";
-    display: block;
-    height: 3px;
-    background-color: var(--txt-second);
-    width: 70px;
-    position: absolute;
-    bottom: -13px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 .main-sobremi .container-sobremi{
     display: flex;
     flex-direction: row;
@@ -253,6 +253,44 @@ ul,a{
 }
 .main-sobremi .container-sobremi .sobremi-info .sobremi-list .button-second img{
     width: 1.5rem;
+}
+.main-skills{
+    min-height: calc(100vh - 64px);
+}
+.main-skills .container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.main-skills .container-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+}
+.main-skills .container-skills .skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-second);
+    border: 1px solid #4B4546;
+    border-radius: 0.5rem;
+    width: 121px;
+    height: 114px;
+    gap: 0.8rem;
+}
+.main-skills .container-skills .skills figure img{
+    width: 45px;
+    height: 45px;
+}
+.main-skills .container-skills .skills .skills-title{
+    color: var(--txt-third);
+    word-wrap: break-word; /* Permite el salto de línea si la palabra es muy larga */
+    word-break: break-word;
+    text-align: center;
 }
 @media (max-width: 768px){
     .container{
