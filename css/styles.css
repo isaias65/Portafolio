@@ -264,6 +264,7 @@ ul,a{
     row-gap: 3rem;
     column-gap: 4rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 .main-skills .container-skills .skills{
     display: flex;
@@ -303,7 +304,7 @@ ul,a{
     column-gap: 0.5rem;
     row-gap: 1.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .main-projects .container-projects .project{
     display: flex;
@@ -455,7 +456,78 @@ ul,a{
 .carousel button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
-
+.main-study{
+    min-height: calc(100vh - 64px);
+}
+.main-study .container{
+    display: flex;
+    flex-direction: column;
+}
+.main-study .container-study{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+}
+.main-study .container-study .study{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 403px;
+    height: 415px;
+    border-radius: 1rem;
+    background-color: var(--bg-second);
+    padding: 0.5rem;
+    gap: 20px;
+}
+.main-study .container-study .study .study-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.main-study .container-study .study .study-info .study-title{
+    color: var(--txt-primary);
+    text-align: center;
+}
+.main-study .container-study .study .study-info .study-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    column-gap: 33px;
+}
+.main-study .container-study .study .study-info .study-date .study-duration{
+    color: var(--txt-second);
+}
+.main-study .container-study .study .study-info .study-date .study-school{
+    color: var(--txt-fourth);
+    background-color: var(--bg-button-primary);
+    width: 96px;
+    height: 19px;
+    border-radius: 1rem;
+    text-align: center;
+}
+.main-study .container-study .study .study-info .study-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.main-study .container-study .study .study-info .study-details .study-item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 21px;
+    width: 340px;
+}
+.main-study .container-study .study .study-info .study-details .study-item .study-description{
+    color: var(--txt-primary);
+}
 @media (max-width: 768px){
     .container{
         padding: 0 1rem;
