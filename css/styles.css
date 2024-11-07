@@ -528,6 +528,74 @@ ul,a{
 .main-study .container-study .study .study-info .study-details .study-item .study-description{
     color: var(--txt-primary);
 }
+.main-footer{
+    min-height: calc(40vh - 64px);
+}
+.main-footer .container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.main-footer .container-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    /*gap: 4rem; */
+    flex-wrap: wrap;
+}
+.main-footer .container-footer .footer-section{
+    min-width: 300px;
+    margin-bottom: 3rem;
+}
+.main-footer .container-footer .footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 17px;
+}
+.main-footer .container-footer .footer-info .footer-title{
+    color: var(--txt-primary);
+}
+.main-footer .container-footer .footer-info .footer-ubicacion{
+    color: var(--txt-primary);
+    font-size: 1rem;
+}
+.main-footer .container-footer .footer-info .footer-correo{
+    color: var(--txt-second);
+    font-size: 1rem;
+}
+.main-footer .container-footer .footer-enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 11px;
+}
+.main-footer .container-footer .footer-enlaces .footer-subtitle{
+    color: var(--txt-primary);
+}
+.main-footer .container-footer .footer-enlaces .footer-list{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.main-footer .container-footer .footer-enlaces .footer-list a img{
+    width: 32px;
+    height: 32px;
+}
+.main-footer .container .custom-line{
+    border: none;
+    height: 1px;
+    background-color: var(--txt-third);
+    margin: 0 auto;
+    width: 85%;
+}
+.main-footer .container .footer-derechos{
+    text-align: center;
+    color: var(--txt-third);
+    margin-top: 33px;
+}
 @media (max-width: 768px){
     .container{
         padding: 0 1rem;
