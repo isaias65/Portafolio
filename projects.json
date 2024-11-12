@@ -4,51 +4,45 @@
         "title": "Sistema de Gestión de Robots y Competencias",
         "shortDescription": "Desarrollé un sitio web donde los usuarios pueden registrar sus robots, ver competencias disponibles y inscribir sus robots en los eventos de su interés.",
         "longDescription": "Este proyecto es un sistema web que permite a los usuarios registrar sus robots y ver competencias disponibles. Los usuarios pueden crear perfiles de sus robots, consultar las competencias tecnológicas y inscribir sus robots en los eventos de su interés. La plataforma gestiona toda la información necesaria sobre los robots y las competencias, permitiendo un fácil seguimiento de las inscripciones. El backend gestiona el registro de robots y la inscripción en eventos, mientras que el frontend proporciona una interfaz intuitiva para los usuarios.",
-        "imagePrimary": "./assets/img-hero-2.jpg",
+        "imagePrimary": "./assets/Robot/img-robot-1.jpeg",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "/assets/Robot/img-robot-1.jpg",
-          "/assets/Robot/img-robot-2.jpg",
-          "/assets/Robot/img-robot-3.jpg"
+          "/assets/Robot/img-robot-1.jpeg",
+          "/assets/Robot/img-robot-4.jpeg",
+          "/assets/Robot/img-robot-2.jpeg",
+          "/assets/Robot/img-robot-3.jpeg"
         ],
         "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySql"]
       },
       {
-        "title": "Project 2",
-        "shortDescription": "A brief overview of Project 2.",
-        "longDescription": "This is the detailed description of Project 2, explaining the features, design choices, and technologies used.",
-        "imagePrimary": "./assets/img-hero-2.jpg",
+        "title": "Diseño de Interfaz de Tienda Online",
+        "shortDescription": "Desarrollo de una interfaz de tienda en línea, optimizada para una experiencia de compra intuitiva y adaptable a distintos dispositivos",
+        "longDescription": "Este proyecto abarca el diseño de una tienda en línea, enfocada en brindar una experiencia de usuario atractiva y fácil de navegar. La interfaz fue diseñada para destacar los productos de forma clara y organizada, facilitando el proceso de compra desde la visualización hasta el carrito.",
+        "imagePrimary": "./assets/Tienda/img-tienda-1.png",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "/assets/Robot/img-robot-1.jpg",
-          "/assets/Robot/img-robot-2.jpg",
-          "/assets/Robot/img-robot-3.jpg"
+          "/assets/Tienda/img-tienda-1.png",
+          "/assets/Tienda/img-tienda-2.png",
+          "/assets/Tienda/img-tienda-3.png",
+          "/assets/Tienda/img-tienda-4.png",
+          "/assets/Tienda/img-tienda-5.png"
+          
         ],
-        "technologies": ["React", "Node.js", "MongoDB"]
+        "technologies": ["HTML", "CSS", "JavaScript", "Tailwindcss", "DOM"]
       },
       {
-        "title": "Project 3",
-        "shortDescription": "A brief overview of Project 2.",
-        "longDescription": "This is the detailed description of Project 2, explaining the features, design choices, and technologies used.",
-        "imagePrimary": "./assets/img-hero-2.jpg",
+        "title": "Decodificador de Texto",
+        "shortDescription": "Aplicación para codificar y decodificar mensajes de texto, diseñada para simplificar el proceso de encriptación y desencriptación.",
+        "longDescription": "Este proyecto consiste en un decodificador de texto que permite a los usuarios transformar mensajes de manera sencilla, convirtiendo texto en un formato codificado y, posteriormente, devolviéndolo a su estado original. La aplicación fue diseñada con una interfaz intuitiva y clara, facilitando tanto la codificación como la decodificación de mensajes para garantizar una experiencia accesible.",
+        "imagePrimary": "./assets/Decodificador/img-deco-1.png",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "image2-1.jpg",
-          "image2-2.jpg"
+          "/assets/Decodificador/img-deco-1.png",
+          "/assets/Decodificador/img-deco-2.png",
+          "/assets/Decodificador/img-deco-3.png",
+          "/assets/Decodificador/img-deco-4.png"
         ],
-        "technologies": ["React", "Node.js", "MongoDB"]
-      },
-      {
-        "title": "Project 4",
-        "shortDescription": "A brief overview of Project 2.",
-        "longDescription": "This is the detailed description of Project 2, explaining the features, design choices, and technologies used.",
-        "imagePrimary": "./assets/img-hero-2.jpg",
-        "imageAlt": "Imagen del proyecto",
-        "images": [
-          "image2-1.jpg",
-          "image2-2.jpg"
-        ],
-        "technologies": ["React", "Node.js", "MongoDB"]
+        "technologies": ["HTML", "CSS", "JavaScript"]
       }
     ]
   }
