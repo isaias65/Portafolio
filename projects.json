@@ -7,10 +7,10 @@
         "imagePrimary": "./assets/Robot/img-robot-1.jpeg",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "/assets/Robot/img-robot-1.jpeg",
-          "/assets/Robot/img-robot-4.jpeg",
-          "/assets/Robot/img-robot-2.jpeg",
-          "/assets/Robot/img-robot-3.jpeg"
+          "./assets/Robot/img-robot-1.jpeg",
+          "./assets/Robot/img-robot-4.jpeg",
+          "./assets/Robot/img-robot-2.jpeg",
+          "./assets/Robot/img-robot-3.jpeg"
         ],
         "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySql"]
       },
@@ -21,11 +21,11 @@
         "imagePrimary": "./assets/Tienda/img-tienda-1.png",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "/assets/Tienda/img-tienda-1.png",
-          "/assets/Tienda/img-tienda-2.png",
-          "/assets/Tienda/img-tienda-3.png",
-          "/assets/Tienda/img-tienda-4.png",
-          "/assets/Tienda/img-tienda-5.png"
+          "./assets/Tienda/img-tienda-1.png",
+          "./assets/Tienda/img-tienda-2.png",
+          "./assets/Tienda/img-tienda-3.png",
+          "./assets/Tienda/img-tienda-4.png",
+          "./assets/Tienda/img-tienda-5.png"
           
         ],
         "technologies": ["HTML", "CSS", "JavaScript", "Tailwindcss", "DOM"]
@@ -37,10 +37,10 @@
         "imagePrimary": "./assets/Decodificador/img-deco-1.png",
         "imageAlt": "Imagen del proyecto",
         "images": [
-          "/assets/Decodificador/img-deco-1.png",
-          "/assets/Decodificador/img-deco-2.png",
-          "/assets/Decodificador/img-deco-3.png",
-          "/assets/Decodificador/img-deco-4.png"
+          "./assets/Decodificador/img-deco-1.png",
+          "./assets/Decodificador/img-deco-2.png",
+          "./assets/Decodificador/img-deco-3.png",
+          "./assets/Decodificador/img-deco-4.png"
         ],
         "technologies": ["HTML", "CSS", "JavaScript"]
       }
