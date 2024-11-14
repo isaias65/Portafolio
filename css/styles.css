@@ -319,7 +319,7 @@ ul,a{
     gap: 30px;
     background-color: var(--bg-primary);
     width: 638px;
-    min-height: 270px;
+    height: 270px;
     padding: 1.5rem;
     border-radius: 1rem;
 }
@@ -486,7 +486,7 @@ ul,a{
     align-items: center;
     justify-content: center;
     width: 403px;
-    height: 415px;
+    min-height: 415px;
     border-radius: 1rem;
     background-color: var(--bg-second);
     padding: 0.5rem;
@@ -509,6 +509,7 @@ ul,a{
     align-items: center;
     justify-content: center;
     column-gap: 33px;
+    padding: 0 0.5rem;
 }
 .main-study .container-study .study .study-info .study-date .study-duration{
     color: var(--txt-second);
@@ -532,6 +533,7 @@ ul,a{
     align-items: flex-start;
     column-gap: 21px;
     width: 340px;
+    padding: 0 0.5rem;
 }
 .main-study .container-study .study .study-info .study-details .study-item .study-description{
     color: var(--txt-primary);
@@ -678,6 +680,7 @@ ul,a{
         display: flex;
         flex-direction: column;
         width: 350px;
+        height: 490px;
     }
 
     .modal .modal-content{
@@ -713,6 +716,13 @@ ul,a{
         height: 300px;
     }
 
+    .main-projects .container-projects .project{
+        width: 330px;
+    }
+    .main-projects .container-projects .project .project-info{
+        padding: 0 0.5rem;
+    }
+
     .modal .modal-content{
         padding: 1.5rem;
     }
@@ -725,5 +735,8 @@ ul,a{
     }
     .modal .modal-content .modal-info{
         max-width: 300px;
+    }
+    .main-study .container-study .study{
+        width: 340px;
     }
 }
