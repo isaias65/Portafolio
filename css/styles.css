@@ -501,6 +501,7 @@ ul,a{
 .main-study .container-study .study .study-info .study-title{
     color: var(--txt-primary);
     text-align: center;
+    padding: 0 0.5rem;
 }
 .main-study .container-study .study .study-info .study-date{
     display: flex;
@@ -737,6 +738,9 @@ ul,a{
         max-width: 300px;
     }
     .main-study .container-study .study{
-        width: 340px;
+        width: 330px;
+    }
+    .main-study .container-study .study .study-info .study-details .study-item {
+        width: 330px;
     }
 }
